@@ -78,6 +78,7 @@ try:
     # Try to create a groups.txt file 
     # If the script is on a web compiler it can't create the file
     # so we'll skip this
+    groups_file = False # Setting to false and then setting to the file instance if it can be created.
     try: 
         groups_file = open("./groups.txt", "w")
         groups_file.write("")
